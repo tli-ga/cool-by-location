@@ -1,9 +1,9 @@
 # write a function that accepts one parameter, location
 
 def cool_location(location)
-	if location == "brooklyn" or location == "Brooklyn"
+	if location == "brooklyn" or location == "manhattan"
 		puts("You are so cool")
-	elsif location == "manhattan" or location == "Manhattan"
+	elsif location == "queens" or location == "bronx"
 		puts("You are cool")
 	else 
 		puts("You are not cool")
@@ -16,7 +16,7 @@ end
 puts("Where do you live?")
 # ask the user for where they live
 
-user_location = gets.strip
+user_location = gets.strip.downcase
 # store that information in a variable
 
 cool_location(user_location)
